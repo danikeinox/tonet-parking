@@ -9,23 +9,24 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Tonet Browser — Built on Servo',
   description: 'Browse without the weight. Push back on web bloat. Tonet is built around the Servo rendering engine and a minimal shell—speed, clarity, and intentional limits.',
-  generator: 'v0.app',
+  manifest: '/site.webmanifest',
+  themeColor: '#6d59ff',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/favicon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
+        url: '/favicon.svg',
         type: 'image/svg+xml',
       },
+      {
+        url: '/favicon.ico',
+      },
     ],
-    apple: '/apple-icon.png',
+    apple: '/apple-touch-icon.png',
   },
 }
 
